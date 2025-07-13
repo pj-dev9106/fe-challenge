@@ -15,7 +15,7 @@ export default function Home() {
     return (
         <div className="home-container">
             <span style={{ fontSize: "36px", fontWeight: '700', color: '#fcfcfc' }}>Condimentum consectetur</span>
-            <div style={{ display: 'flex', gap: '10px', flexDirection: 'row', justifyContent: 'space-between', width: "100%" }}>
+            <div style={{ display: 'flex', gap: '20px', flexDirection: 'row', justifyContent: 'space-between', width: "100%", marginTop: '20px', marginBottom: '20px' }}>
                 <Select
                     startAddorment={<img src="/circle-sword.svg" width={"30px"} height={"30px"} alt="sword" />}
                     arrowIcon={<div style={{ width: '24px', height: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -27,23 +27,26 @@ export default function Home() {
                         flexShrink: 1,
                         flexGrow: 1,
                         height: '60px',
+                        color: "white"
                     }}
                     selectedVal={"Select a game"}
                 />
 
                 <Input
-                    startAddornment={<img src="/icons8-search-30.png" width={'30px'} height={"30px"} alt="search" />}
+                    startAddornment={<img src="/icons8-search.svg" width={'30px'} height={"30px"} alt="search" />}
                     style={{
                         backgroundColor: 'rgba(57, 64, 90, 0.6)',
                         borderRadius: 4,
                         flexShrink: 4,
-                        flexGrow: 4
+                        flexGrow: 4,
+                        color: "white"
                     }}
+                    placeholder="Search"
                 />
 
                 <div style={{display: 'flex'}}>
                     <Select
-                        startAddorment={<img src="/icons8-search-30.png" alt="search" />}
+                        startAddorment={<img src="/item-bag.svg" alt="search" />}
                         style={{
                             backgroundColor: 'rgba(57, 64, 90, 0.6)',
                             borderRadius: '4px 0px 0px 4px',
@@ -58,7 +61,7 @@ export default function Home() {
                         selectedVal={"All"}
                     />
                     <Select
-                        startAddorment={<img src="/icons8-search-30.png" alt="search" />}
+                        startAddorment={<img src="/subscription-icon-green.svg" alt="search" />}
                         style={{
                             backgroundColor: 'rgba(57, 64, 90, 0.6)',
                             borderRadius: '0px 4px 4px 0px',
