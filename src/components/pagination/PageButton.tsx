@@ -10,19 +10,37 @@ interface PageButtonPropTypes {
     page: string
     currentPage: number,
     type: PageButtonType,
-    pages: number
+    pages: number,
+    onPageClick?: (page: number) => void,
+    onNext?: () => void,
+    onPrev?: () => void
 }
 
-export default function PageButton ({page, currentPage, type, pages}: PageButtonPropTypes) {
-    return (
+export default function PageButton ({page, currentPage, type, pages, onPageClick, onNext, onPrev}: PageButtonPropTypes) {
+    const handlePageClick = () => {
+        if (type === PageButtonType.PAGE && page !== '...' && onPageClick) {
+            onPageClick(parseInt(page))
+        } else if (type === PageButtonType.FORWARD && onNext) {
+            onNext()
+        } else if (type === PageButtonType.BACKWARD && onPrev) {
+            onPrev()
+        }
+    }
 
-        type === PageButtonType.PAGE ? page !== '...' ? <button className="pagination-page-button" style={{backgroundColor: +page === currentPage ? '#5762D5' : 'transparent'}}>
-            {page}
-        </button>
+    return (
+        type === PageButtonType.PAGE ? page !== '...' ? 
+            <button 
+                className="pagination-page-button" 
+                style={{backgroundColor: +page === currentPage ? '#5762D5' : 'transparent'}}
+                onClick={handlePageClick}
+            >
+                {page}
+            </button>
         : <div style={{color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>...</div>
         : <button 
             className="pagination-handler-button" 
             disabled={(currentPage === 1 && type === PageButtonType.BACKWARD) || (currentPage === pages && type === PageButtonType.FORWARD)}
+            onClick={handlePageClick}
         >
             {
                 type === PageButtonType.FORWARD ? '>' : '<'

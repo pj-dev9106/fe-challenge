@@ -17,3 +17,42 @@
     align-items: center;
     justify-content: space-between;
 }
+
+@media (max-width: 1024px) {
+    .paper-container {
+        padding: 24px;
+        gap: 24px;
+    }
+    
+    .paper-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .paper-container {
+        padding: 16px;
+        gap: 20px;
+    }
+    
+    .paper-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .paper-container {
+        padding: 12px;
+        gap: 16px;
+    }
+    
+    .paper-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

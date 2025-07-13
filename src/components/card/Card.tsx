@@ -44,7 +44,7 @@ export default function Card({ item }: CardPropTypes) {
                 <span style={{textDecoration: 'line-through', textDecorationColor: 'red', textDecorationThickness: 2}}>{'$' + item.originalPrice.toFixed(2)}</span>
             </div>
 
-            <div style={{color: '#CBCCD1', letterSpacing: '0.86'}}>
+            <div style={{color: '#CBCCD1', letterSpacing: '0.86', fontSize: '11px'}}>
                 {
                     item.content
                 }

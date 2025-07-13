@@ -1,4 +1,5 @@
 import { footerHyperLinks } from '../../utils/constants';
+import Accordion from '../accordion/Accordion';
 import './style.css';
 
 export default function Footer() {
@@ -17,24 +18,30 @@ export default function Footer() {
                     <span className='company-email-typo'>support@chicksgold.com</span>
                 </div>
 
-                {
-                    footerHyperLinks.map((group, index) => {
-                        return (
-                            <div key={index} className='company-link-group-container'>
-                                <span className='company-link-group-title'>{group.title}</span>
-                                {
-                                    group.links.map((link, idx) => {
-                                        return (
-                                            <div key={idx}>
-                                                <span className='company-link-title'>{link.title}</span>
-                                            </div>
-                                        )
-                                    })
-                                }
-                            </div>
-                        )
-                    })
-                }
+                <div className="desktop-link-groups">
+                    {
+                        footerHyperLinks.map((group, index) => {
+                            return (
+                                <div key={index} className='company-link-group-container'>
+                                    <span className='company-link-group-title'>{group.title}</span>
+                                    {
+                                        group.links.map((link, idx) => {
+                                            return (
+                                                <div key={idx}>
+                                                    <span className='company-link-title'>{link.title}</span>
+                                                </div>
+                                            )
+                                        })
+                                    }
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+
+                <div className="mobile-accordion">
+                    <Accordion items={footerHyperLinks} />
+                </div>
 
                 <div >
                     <div className='company-reputation-container'>
