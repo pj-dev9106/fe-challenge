@@ -1,7 +1,6 @@
 import type { ReactNode } from "react";
 import Header from "../components/header/Header";
 import './style.css'
-import PaymentBar from "../components/paymentbar/PaymentBar";
 
 export default function MasterLayout({ children }: { children: ReactNode }) {
     return (

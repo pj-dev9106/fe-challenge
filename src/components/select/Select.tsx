@@ -1,4 +1,4 @@
-import type { HTMLAttributes, ReactNode, SelectHTMLAttributes } from 'react'
+import type { HTMLAttributes, ReactNode } from 'react'
 import './style.css'
 
 interface SelectPropTypes extends HTMLAttributes<HTMLDivElement> {
