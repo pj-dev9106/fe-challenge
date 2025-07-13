@@ -1,0 +1,91 @@
+.footer-container {
+    width: 100%;
+    background-color: #303141;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons {
+    display: flex;
+    width: 1280px;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #4C6085;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-icons img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.company-link-group {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.company-email-typo {
+    margin-top: 20px;
+    color: #fcfcfc;
+    font-size: 14px;
+}
+
+.company-link-group-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.company-link-group-title {
+    margin-top: 20px;
+    color: #fcfcfc;
+    font-size: 18px;
+}
+
+.company-link-title {
+    color: #BDBEC5;
+    font-size: 14px;
+}
+
+.company-reputation-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.company-reputation-star-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2px
+}
+
+.reputation-star {
+    background-color: #00B67A;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reputation-review {
+    color: #BDBEC5;
+}
+
+.copy-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #BDBEC5;
+    margin-top: 80px;
+}

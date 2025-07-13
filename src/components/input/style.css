@@ -1,0 +1,40 @@
+.input-container {
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+
+.custom-input {
+    border-radius: 4px 0px 0px 4px;
+    background-color: unset;
+    padding: 8px;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    -moz-appearance: textfield;
+    appearance: none;
+}
+
+.custom-input::-webkit-inner-spin-button,
+.custom-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.input-button-group-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #373E54;
+    justify-content: center;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.input-arrow-button {
+    background-color: transparent;
+    border: none;
+    padding: 0px 10px;
+    cursor: pointer;
+}

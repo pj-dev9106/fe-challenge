@@ -1,0 +1,25 @@
+.navigation-bar {
+    padding-inline: 16px 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #303141;
+}
+
+.navbar-logo {
+    padding: 0px 36px;
+    height: 32px;
+    border-right: 1px solid hsla(0, 0%, 100%, .3);
+    cursor: pointer;
+}
+
+.navbar-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-custom-icon-button {
+    color: #fcfcfc;
+}
