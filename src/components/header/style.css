@@ -209,7 +209,7 @@
     .mobile-user-actions {
         order: 3;
         flex: 1;
-        justify-content: center;
+        justify-content: end;
     }
     
     .mobile-menu-button {
