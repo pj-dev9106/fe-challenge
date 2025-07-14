@@ -13,10 +13,9 @@ interface PaginationPropTypes {
 export default function Pagination({ pages, currentPagge, setCurrentPage, handleNext, handlePrev }: PaginationPropTypes) {
 
     const [pageArray, setPageArray] = useState<string[]>([])
-    const MAX_VISIBLE_PAGES = 8
 
     useEffect(() => {
-        if (pages <= MAX_VISIBLE_PAGES) {
+        if (pages <= 8) {
             setPageArray(Array.from({ length: pages }, (_, i) => (i + 1).toString()));
         } else {
             if (currentPagge <= 4) {

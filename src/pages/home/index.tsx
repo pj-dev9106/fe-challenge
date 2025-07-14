@@ -12,7 +12,7 @@ export default function Home() {
 
     const [showOptions, setShowOptions] = useState(false)
     const [currentPage, setCurrentPage] = useState(1)
-    const itemsPerPage = 8
+    const itemsPerPage = 12
     const totalItems = items.length
     const totalPages = Math.ceil(totalItems / itemsPerPage)
 
