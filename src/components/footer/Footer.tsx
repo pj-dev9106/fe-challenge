@@ -8,13 +8,13 @@ export default function Footer() {
             <div className="social-icons">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
-                <img src="/twitter-2012-positive-seeklogo.png" alt="Twitter" />
-                <img src="/discord-seeklogo.png" alt="Discord" />
+                <img src="twitter-2012-positive-seeklogo.png" alt="Twitter" />
+                <img src="discord-seeklogo.png" alt="Discord" />
             </div>
 
             <div className='company-link-group'>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
-                    <img src='/chicks-logo-large.svg' alt="logo" />
+                    <img src='chicks-logo-large.svg' alt="logo" />
                     <span className='company-email-typo'>support@chicksgold.com</span>
                 </div>
 
@@ -48,7 +48,7 @@ export default function Footer() {
                         <div className='company-reputation-star-container'>
                             {
                                 new Array(5).fill(<div className='reputation-star'>
-                                    <img src='/star_full.svg' alt="star" />
+                                    <img src='star_full.svg' alt="star" />
                                 </div>)
                             }
                         </div>

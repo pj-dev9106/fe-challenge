@@ -12,23 +12,20 @@ interface MobileMenuProps {
 export default function MobileMenu({ isOpen, onClose, purchasedItems }: MobileMenuProps) {
     return (
         <>
-            {/* Overlay */}
             <div 
                 className={`mobile-menu-overlay ${isOpen ? 'open' : ''}`} 
                 onClick={onClose}
             />
             
-            {/* Menu */}
             <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
                 <div className="mobile-menu-header">
                     <span className="mobile-menu-title">Menu</span>
                     <button className="mobile-menu-close" onClick={onClose}>
-                        <img src="/arrow-white.svg" alt="close" style={{ transform: 'rotate(45deg)' }} />
+                        <img src="arrow-white.svg" alt="close" style={{ transform: 'rotate(45deg)' }} />
                     </button>
                 </div>
                 
                 <div className="mobile-menu-content">
-                    {/* Navigation Buttons */}
                     <div className="mobile-menu-section">
                         <span className="mobile-menu-section-title">Navigation</span>
                         {navbarButtons.map((button, index) => (
@@ -38,7 +35,6 @@ export default function MobileMenu({ isOpen, onClose, purchasedItems }: MobileMe
                         ))}
                     </div>
                     
-                    {/* User Actions */}
                     <div className="mobile-menu-section">
                         <span className="mobile-menu-section-title">Account</span>
                         <div className="mobile-menu-item">
@@ -47,7 +43,7 @@ export default function MobileMenu({ isOpen, onClose, purchasedItems }: MobileMe
                         <div className="mobile-menu-item">
                             <IconButton 
                                 content={`cart (${purchasedItems})`} 
-                                startAddornmentIcon={<img src='/bucket.svg' alt='bucket' style={{height: 16}} />}
+                                startAddornmentIcon={<img src='bucket.svg' alt='bucket' style={{height: 16}} />}
                                 classes={'nav-custom-icon-button'}
                             />
                         </div>

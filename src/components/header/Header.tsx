@@ -36,7 +36,7 @@ export default function Header({ isScrolling = true }: HeaderProps) {
                             </div>
                         </button>
 
-                        <img src='/chicks-logo-large.svg' className='navbar-logo' alt='logo' />
+                        <img src='chicks-logo-large.svg' className='navbar-logo' alt='logo' />
                     </div>
 
                     <div className='navbar-button-container desktop-nav'>
@@ -54,7 +54,7 @@ export default function Header({ isScrolling = true }: HeaderProps) {
                     <NavButton content='USD'></NavButton>
                     <IconButton
                         content={`cart (${purchasedItems})`}
-                        startAddornmentIcon={<img src='/bucket.svg' alt='bucket' style={{ height: 16 }} />}
+                        startAddornmentIcon={<img src='bucket.svg' alt='bucket' style={{ height: 16 }} />}
                         classes={'nav-custom-icon-button'}
                     ></IconButton>
                     <IconButton
@@ -63,7 +63,7 @@ export default function Header({ isScrolling = true }: HeaderProps) {
                             background: '#39E29D',
                             gap: 10
                         }}
-                        endAddornmentIcon={<img src='/customer.svg' alt='user' style={{ height: 20 }} />}
+                        endAddornmentIcon={<img src='customer.svg' alt='user' style={{ height: 20 }} />}
                     ></IconButton>
                 </div>
 
@@ -74,7 +74,7 @@ export default function Header({ isScrolling = true }: HeaderProps) {
                             background: '#39E29D',
                             gap: 10
                         }}
-                        endAddornmentIcon={<img src='/customer.svg' alt='user' style={{ height: 20 }} />}
+                        endAddornmentIcon={<img src='customer.svg' alt='user' style={{ height: 20 }} />}
                     ></IconButton>
                 </div>
             </div>

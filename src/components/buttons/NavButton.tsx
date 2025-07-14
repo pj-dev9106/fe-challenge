@@ -10,7 +10,7 @@ export default function NavButton ({content}: NavButtonPropTypes) {
             <span>
                 {content}
             </span>
-            <img src='/arrow-down.svg' className='nav-button-arrow' alt='arrow'/>
+            <img src='arrow-down.svg' className='nav-button-arrow' alt='arrow'/>
         </div>
     )
 }

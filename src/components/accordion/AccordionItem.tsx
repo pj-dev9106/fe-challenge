@@ -15,7 +15,7 @@ export function AccordionItem({ title, children, isOpen = false, onToggle }: Acc
             >
                 <span className="accordion-title">{title}</span>
                 <div className={`accordion-arrow ${isOpen ? 'open' : ''}`}>
-                    <img src="/arrow-white.svg" alt="expand" />
+                    <img src="arrow-white.svg" alt="expand" />
                 </div>
             </button>
             <div className={`accordion-content ${isOpen ? 'open' : ''}`}>

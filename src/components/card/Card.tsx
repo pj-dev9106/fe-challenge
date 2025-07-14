@@ -73,7 +73,7 @@ export default function Card({ item }: CardPropTypes) {
                                 justifyContent: 'center'
                             }}
                         >
-                            <img src='/bucket.svg' width={'16px'} height={'16px'} />
+                            <img src='bucket.svg' width={'16px'} height={'16px'} />
                         </div>
                     }
                     sx={{

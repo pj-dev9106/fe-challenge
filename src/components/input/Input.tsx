@@ -22,10 +22,10 @@ export default function Input({ className, increaseFunc, decreaseFunc, style, ..
             {
                 props.type === 'number' && <div className='input-button-group-box'>
                     <button className='input-arrow-button' onClick={increaseFunc}>
-                        <img src='/arrow-white.svg' style={{ width: 12, height: 6, transform: 'rotate(180deg)' }} />
+                        <img src='arrow-white.svg' style={{ width: 12, height: 6, transform: 'rotate(180deg)' }} />
                     </button>
                     <button className='input-arrow-button' onClick={decreaseFunc}>
-                        <img src='/arrow-white.svg' style={{ width: 12, height: 6 }} />
+                        <img src='arrow-white.svg' style={{ width: 12, height: 6 }} />
                     </button>
                 </div>
             }

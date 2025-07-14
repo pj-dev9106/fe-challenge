@@ -42,9 +42,9 @@ export default function Home() {
                 <span className="home-header-title">Condimentum consectetur</span>
                 <div className="home-controls">
                     <Select
-                        startAddorment={<img src="/circle-sword.svg" width={"30px"} height={"30px"} alt="sword" />}
+                        startAddorment={<img src="circle-sword.svg" width={"30px"} height={"30px"} alt="sword" />}
                         arrowIcon={<div style={{ width: '24px', height: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <img src="/arrow-white.svg" alt="arrow" style={{ width: '12px', height: '6px' }}></img>
+                            <img src="arrow-white.svg" alt="arrow" style={{ width: '12px', height: '6px' }}></img>
                         </div>}
                         style={{
                             backgroundColor: 'rgba(57, 64, 90, 0.6)',
@@ -58,7 +58,7 @@ export default function Home() {
                     />
 
                     <Input
-                        startAddornment={<img src="/icons8-search.svg" width={'30px'} height={"30px"} alt="search" />}
+                        startAddornment={<img src="icons8-search.svg" width={'30px'} height={"30px"} alt="search" />}
                         style={{
                             backgroundColor: 'rgba(57, 64, 90, 0.6)',
                             borderRadius: 4,
@@ -71,7 +71,7 @@ export default function Home() {
 
                     <div style={{display: 'flex'}}>
                         <Select
-                            startAddorment={<img src="/item-bag.svg" alt="search" />}
+                            startAddorment={<img src="item-bag.svg" alt="search" />}
                             style={{
                                 backgroundColor: 'rgba(57, 64, 90, 0.6)',
                                 borderRadius: '4px 0px 0px 4px',
@@ -80,13 +80,13 @@ export default function Home() {
                                 flexGrow: 1
                             }}
                             arrowIcon={<div style={{ width: '24px', height: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                <img src="/arrow-white.svg" alt="arrow" style={{ width: '12px', height: '6px' }}></img>
+                                <img src="arrow-white.svg" alt="arrow" style={{ width: '12px', height: '6px' }}></img>
                             </div>}
                             float="Price"
                             selectedVal={"All"}
                         />
                         <Select
-                            startAddorment={<img src="/subscription-icon-green.svg" alt="search" />}
+                            startAddorment={<img src="subscription-icon-green.svg" alt="search" />}
                             style={{
                                 backgroundColor: 'rgba(57, 64, 90, 0.6)',
                                 borderRadius: '0px 4px 4px 0px',
@@ -94,7 +94,7 @@ export default function Home() {
                                 flexGrow: 1
                             }}
                             arrowIcon={<div style={{ width: '24px', height: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                <img src="/arrow-white.svg" alt="arrow" style={{ width: '12px', height: '6px' }}></img>
+                                <img src="arrow-white.svg" alt="arrow" style={{ width: '12px', height: '6px' }}></img>
                             </div>}
                             float="Item Type"
                             selectedVal={'All'}
@@ -110,11 +110,11 @@ export default function Home() {
                         </span>
                         <Select
                             startAddorment={
-                                <img src="/filter.svg" alt="/" style={{ marginLeft: '12px', marginRight: '12px', width: '24px', height: '24px' }} />
+                                <img src="filter.svg" alt="/" style={{ marginLeft: '12px', marginRight: '12px', width: '24px', height: '24px' }} />
                             }
                             arrowIcon={
                                 <div style={{ width: '24px', height: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                    <img src="/arrow-white.svg" alt="arrow" style={{ width: '12px', height: '6px' }}></img>
+                                    <img src="arrow-white.svg" alt="arrow" style={{ width: '12px', height: '6px' }}></img>
                                 </div>
                             }
                             onClick={() => { setShowOptions(!showOptions) }}
