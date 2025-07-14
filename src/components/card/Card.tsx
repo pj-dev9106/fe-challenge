@@ -31,10 +31,10 @@ export default function Card({ item }: CardPropTypes) {
                 <span style={{color: '#fcfcfc', fontSize: '18px'}}>{item.name}</span>
                 <div className='card-category-badge'>
                     {
-                        item.category === 'weapon' && <img src='/subscription-icon-green.svg'></img>
+                        item.category === 'weapon' && <img src='subscription-icon-green.svg'></img>
                     }
                     {
-                        item.category === 'character' && <img src='/item-bag.svg'></img>
+                        item.category === 'character' && <img src='item-bag.svg'></img>
                     }
                 </div>
             </div>
