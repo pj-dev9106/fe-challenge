@@ -21,3 +21,7 @@ npm run dev
 ```
 
 After run the application, it should be run on the port 3000: http://localhost:3000
+
+## Live Demo
+This app is already deployed and hosted by Github pages.
+Here is the link for this Live Demo: https://pj-dev9106.github.io/fe-challenge
