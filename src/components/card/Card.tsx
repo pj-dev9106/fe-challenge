@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import type { ItemType } from '../../utils/types'
 import IconButton from '../buttons/IconButton'
 import Input from '../input/Input'
@@ -8,6 +9,8 @@ interface CardPropTypes {
 }
 
 export default function Card({ item }: CardPropTypes) {
+
+    const [amount, setAmount] = useState<number>(1);
 
     return (
         <div className='card-container'>
@@ -20,7 +23,7 @@ export default function Card({ item }: CardPropTypes) {
 
                     <div className='card-stock-status'>In stock</div>
                 </div>
-                <Input type='number' style={{width: '100px', backgroundColor: "#373E54"}} defaultValue={1} increaseFunc={() => { }} decreaseFunc={() => { }} />
+                <Input type='number' style={{width: '100px', backgroundColor: "#373E54"}} defaultValue={1} value={amount} increaseFunc={() => { setAmount(amount + 1) }} decreaseFunc={() => { setAmount(amount - 1) }} />
             </div>
             
             <div>

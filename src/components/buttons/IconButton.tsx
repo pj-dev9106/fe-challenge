@@ -1,6 +1,6 @@
-import type { ReactNode } from "react";
+import type { ButtonHTMLAttributes, ReactNode } from "react";
 
-interface IconButtonProps {
+interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     startAddornmentIcon?: ReactNode
     endAddornmentIcon?: ReactNode
     content?: string

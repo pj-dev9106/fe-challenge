@@ -41,3 +41,7 @@
     cursor: pointer;
     border-radius: 4px;
 }
+
+.icon-button:hover {
+    filter: drop-shadow(0 0 0.5rem #5d5e6b);
+}
